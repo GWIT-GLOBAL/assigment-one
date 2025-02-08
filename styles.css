@@ -1,6 +1,11 @@
+/* base css */
+* {
+    margin: 0;
+}
+
 body{
     font-family: Arial, sans-serif;
-    background-color: #8df2e3;
+    background-color: #680404;
     margin: 0;
     padding: o;
     display: flex;
@@ -11,7 +16,7 @@ body{
 }
 
 .contact-container{
-    background: white;
+    background: rgb(121, 3, 3);
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0,0,0,0.2);
@@ -53,11 +58,6 @@ textarea {
     resize: none;
 }
 
-.radio-group {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
 
 button {
     background-color: #2c974b;
@@ -79,4 +79,79 @@ input[type="checkbox"] {
 img{
     pointer-events: none;
 }
+
+.radio-elems {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.radio-group {
+    display: flex;
+}
+
+/* #radio-label-on{
+    margin: 0;
+    padding: 1rem;
+} */
+
+.radio-label {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 1rem;
+    width: 10rem;
+    text-align: center;
+    padding: 1rem!important;
+}
+
+#radio{
+    margin: 0;
+    padding: 0rem;
+    width: 20px;
+}
+
+/*tablet screens */
+@media screen and (min-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .contact-container {
+        background-color: #23863a;
+    }
+
+    .radio-label {
+        width: 5rem;
+        padding: 0.5!important;
+        font-size: 0.6rem;
+    }
+
+  }
+    
+
+/* Laptop screens */
+@media screen and (min-width: 1024px) {
+    body {
+      background-color: lightgreen;
+    }
+
+    .contact-container {
+        background-color: #1e0557;
+    }
+
+    .radio-label {
+        width: 5rem;
+        padding: 0.5!important;
+        font-size: 0.6rem;
+    }
+
+  }
+
+  @media screen and (min-width: 1440px) {
+
+    .contact-container {
+        background-color: #47e4fd;
+    }
+    
+  }
 
