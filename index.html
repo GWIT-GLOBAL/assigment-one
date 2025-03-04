@@ -12,14 +12,14 @@
 <body>
   <div class="contact-container">
     <h1>Contact us</h1>
-      <form id="contactform" class="contact-form" method="POST" action="C:\Users\alber\Documents\form_db.xlsx">
+      <form id="contactform" class="contact-form">
         <div class="form-group">
         <label for="First Name">First Name *</label>
           <br>
-          <input type="Name" id="firstName">
+          <input type="Name" id="First Name">
           <label for="Last Name">Last Name *</label>
           <br>
-          <input type="Name" id="lastName"> //corrections made to id name: id names should be unique
+          <input type="Name" id="Last Name">
         </div>
         <div class="form-group">
           <label for="Email Address">Email Address *</label>
@@ -27,26 +27,24 @@
           <input type="Email" id="Email">
         </div>
         <div class="form-group">
-          <label for="Query Type">Query Type * </label>
-            <div class="radio-elems">
-              <div class="radio-group one">
-                <input type="radio" id="radio" name="radio" value="General Query">
-                <label for="file-upload"  class="radio-label" id="radio-label-one">General Query</label>  
-              </div>
-              <div class="radio-group two">
-                <input type="radio" id="radio" name="radio" value="Support Request">
-                <label for="file-upload"  class="radio-label" id="radio-label-two">Support Request</label>
-              </div>
+          <label for="Query Type">Query Type *</label>
+            <div class="radio-group">
+              <label for="file-upload"></label>
+                <input type="radio" id="radio" name="radio">
+              <input type="query" id="Query" name="queryType" value="General Query">  
+              <label for="file-upload"></label> 
+                <input type="radio" id="radio" name="radio">
+                <input type="query" id="Query" name="querytype" value="Support Request">
             </div>
         <div class="form-group">
           <label for="message">Message</label>
           <textarea id="message" name="message"></textarea>
         </div>
         <div class="form-group">
-          <label for="consent"></label>
-          <input type="checkbox" id="checkbox" name="checkbox" value="Support Request">
-          I consent to being contacted by the team *
-        </div>
+          <Label for="consent"></Label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            I consent to being contacted by the team *
+         </div>
         <button type="submit">Submit</button>
   </div>
   </form>
